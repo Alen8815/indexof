@@ -1,3 +1,5 @@
+package indexof;
+
 import javax.swing.JOptionPane;
 
 /*
@@ -23,7 +25,7 @@ public class indexOf {
     }
     public static void main(String[] args) {
         String palabra = JOptionPane.showInputDialog("Ingrese una palabra:");
-        String letraInput = JOptionPane.showInputDialog("Ingrese la letra a contar:");
+        String letraInput = JOptionPane.showInputDialog("Ingrese la letra a buscar:");
 
         // Validar que se haya ingresado solo una letra
         if (letraInput.length() != 1) {
