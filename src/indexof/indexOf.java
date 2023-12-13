@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  * @author DELL
  */
 public class indexOf {
-    public static int contarLetra(String palabra, char letra) {
-        int contador = 0;
-        int indice = palabra.indexOf(letra);
+    public static int contarLetra(String palabra, char letra) { //metodo contarletra
+        int contador = 0;                                // declara la variable contador de tipo entero que inicializa en 0
+        int indice = palabra.indexOf(letra);     //otra variable donde se va almacenar la cadena palabra que tiene el metodo indexof
 
-        while (indice != -1) {
-            contador++;
-            indice = palabra.indexOf(letra, indice + 1);
+        while (indice != -1) {      //esto indica que seguira ejecutandose siempre y cuando indice no sea -1
+            contador++;            //incrementa el contador
+            indice = palabra.indexOf(letra, indice + 1);  //0
         }
 
         return contador;
@@ -32,6 +32,8 @@ public class indexOf {
             JOptionPane.showMessageDialog(null, "Por favor, ingrese solo una letra.");
             return;
         }
+        
+      
 
         char letraABuscar = letraInput.charAt(0);
 
